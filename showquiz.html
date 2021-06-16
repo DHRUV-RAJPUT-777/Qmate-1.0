@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="showquiz.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="homepage.html" id="logo">Qmate</a></li>
+            <!-- <li><a href="tutorials.html" id="tutorial">Edit Quiz</a></li> -->
+        </ul>
+    </nav>
+
+    <div class="maincontainer">
+        <div class="leftdiv">
+            <div class="heading">
+                <h3>Question List</h3>
+            </div>
+            <div class="Questiondiv">
+                <ul class="questionlist">
+                    <!-- <li class="createdquestionli">
+                        <p class="liQuestion" onclick="showquestion()">Question 1</p>
+
+                    </li>
+                    <li class="createdquestionli">
+                        <p class="liQuestion" onclick="showquestion()">Question 1</p>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="rightcontainer">
+            <div class="formcontainer">
+
+                <div class="Questiondiv">
+                    <div class="Question" id="Question"></div>
+                </div>
+                <ul class="optionlist">
+                    <li class="options" id="Option1"></li>
+                    <li class="options" id="Option2"></li>
+                    <li class="options" id="Option3"></li>
+                    <li class="options" id="Option4"></li>
+                </ul>
+
+                <div class="corrrectoptioncontainer">
+                    <p class="text">Correct Answer :</p>
+                    <div class="correctanswer" id="CorrectAnswer">Correct Answer</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <!-- <button id="editquizbtn" onclick="EditQuiz()">Edit Quiz</button> -->
+    </footer>
+
+    <script src="showquiz.js"></script>
+
+</body>
+
+</html>

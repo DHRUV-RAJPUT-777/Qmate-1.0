@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="results.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logodiv">
+            <p class="logo">Qmate</p>
+        </div>
+
+        <div class="dropdowndiv">
+
+            <div class="dropdowndivcontent selectnamediv" onchange="ChangeQuizName()">
+                <select id="selectname">
+                    <!-- <option value="1">Quiz1</option> -->
+                </select>
+            </div>
+
+            <div class="dropdowndivcontent selectdivisiondiv" onchange="ChangeDivision()">
+                <select id="selectdivision">
+                    <!-- <option value="1">COMP-A</option> -->
+                </select>
+            </div>
+
+            <div class="dropdowndivcontent selectresulttypediv" onchange="ChangeResultType()">
+                <select id="selectresulttype">
+                    <option value="1" selected="selected">Tabular</option>
+                    <option value="2">Graph</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="showbtndiv">
+            <button class="showbtn" onclick="ShowResult()">Show</button>
+        </div>
+    </nav>
+
+
+    <div class="tabularmainbody">
+
+        <div class="headings">
+            <div class="heading1">
+                Student Details
+            </div>
+            <div class="heading2">
+                Scores
+            </div>
+            <div class="heading3">
+                <p>Student Answers</p>
+            </div>
+        </div>
+
+        <!-- <div class="individualstudentdiv">
+            <div class="studentdetailsdiv">
+                <p class="studentname">Name : Dhruv Rajput</p>
+                <p class="studentemail">email : raj.dhruv.777@gmail.com</p>
+            </div>
+            <div class="studentscorediv">
+                <p class="studentscore">100000</p>
+            </div>
+            <div class="useranswersdiv">
+                <div class="answer">1</div>
+                <div class="answer">1</div>
+                <div class="answer">1</div>
+                <div class="answer">1</div>
+                <div class="answer">1</div>
+                <div class="answer">1</div>
+                <div class="answer">1</div>
+            </div> -->
+    </div>
+
+    <div class="graphmainbody">
+
+        <!-- <div class="individualstudentgraph">
+
+            <div class="graphscorediv">
+                <p class="graphscore">1738</p>
+            </div>
+
+            <div class="middiv">
+                <div class="mid-middiv">
+                    <div class="scorebar"></div>
+                </div>
+            </div>
+
+            <div class="graphstudentdetails">
+                <div class="graphstudentname">Dhruv rajput</div>
+                <div class="graphstudentemail">raj.dhruv.777@gmail.com</div>
+            </div>
+        </div> -->
+
+    </div>
+
+    <script src="results.js"></script>
+</body>
+
+</html>

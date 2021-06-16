@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Addparticipants.css">
+</head>
+
+<body>
+
+    <nav>
+        <div id="logo">
+            <h3>Qmate</h3>
+        </div>
+
+        <ul id="navcontent">
+            <div class="navcontentright">
+                <li onclick="AddDivision()">
+                    Add Division
+                </li>
+            </div>
+            <div class="navcontentleft">
+                <li >
+                    <a href="host.html">Host</a>
+                </li>
+                <li >
+                    <a href="homepage.html">Home</a>
+                </li>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="maincontainer">
+        <div class="leftdiv">
+            <div class="heading">
+                <h3>Divisions</h3>
+            </div>
+            <div class="Questiondiv">
+                <ul class="divisionlist">
+                    <!-- <li class="createddivisionli">
+                        <p class="divisions" onclick="showdivision()">Division A</p>
+                        <button class="deletebtn">Delete</button>
+                    </li>
+                    <li class="createddivisionli">
+                        <p class="divisions" onclick="showdivision()">Division B</p>
+                        <button class="deletebtn">Delete</button>
+                    </li>
+                    <li class="createddivisionli">
+                        <p class="divisions" onclick="showdivision()">Division C</p>
+                        <button class="deletebtn">Delete</button>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="rightdiv">
+            <div class="upperdiv">
+                <form action="#" name="participantdetails" onsubmit="addparticipants(event)">
+                    <input class="inputfield" type="text" name="participantname" placeholder="Name">
+                    <input class="inputfield" type="email" name="participantemail" placeholder="Email">
+                    <input id="submitbtn" type="submit" value="Add">
+                </form>
+            </div>
+
+            <div class="lowerdiv">
+                <ul class="storeduserdetails">
+                    <!-- <li class="userinfoli">
+                        <p class="lifield1">Usernamesdfgsdfg</p>
+                        <p class="lifield2">Email Address</p>
+                        <button class="removeuser" onclick="removeuserdetails()">Remove</button>
+                    </li>
+                    <li>
+                        <p class="lifield1" id="Username">Username</p>
+                        <p class="lifield2" id="Useremail">Email Address</p>
+                        <button class="removeuser">Remove</button>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <button onclick="SaveDetails()">Save</button>
+    </footer>
+
+
+
+    <script src="Addparticipants.js"></script>
+</body>
+
+</html>

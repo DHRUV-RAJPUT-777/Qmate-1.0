@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Quizpage.css">
+</head>
+
+<body>
+    <nav>
+        <div id="logo">
+            <h3>Qmate</h3>
+        </div>
+        <div class="welcometextdiv">
+            <h2 id="welcometext">Welcome Player<h2>
+        </div>
+        <div class="timecontainer">
+            <h4 id="timeleft"></h4>
+        </div>
+    </nav>
+
+    <div class="leftcontainer">
+        <div class="questiondiv">
+            <h3 id="Question"></h3>
+        </div>
+        <ul class="optionlist">
+            <li class="options" id="Option1"></li>
+            <li class="options" id="Option2"></li>
+            <li class="options" id="Option3"></li>
+            <li class="options" id="Option4"></li>
+        </ul>
+        <div class="btndiv">
+            <button class="btndivbtn" id="ResetAnswer" onclick="ResetAnswer()">Clear Answer</button>
+            <button class="btndivbtn" id="SaveAnswer" onclick="SaveAnswer()">Save</button>
+        </div>
+    </div>
+
+    <div class="maincontainer">
+
+        <div class="rightcontainer">
+            <div class="lowercontainer">
+                <div class="heading">
+                    <h3>Questions</h3>
+                </div>
+                <div class="selectoptioncontainer">
+                    <!-- <button class="selectoptions" id="">1</button> -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <button id="submitquizbtn" onclick="SubmitQuiz()">Submit</button>
+    </footer>
+
+    <script src="Quizpage.js"></script>
+</body>
+
+</html>

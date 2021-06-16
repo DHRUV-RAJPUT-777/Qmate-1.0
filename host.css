@@ -1,0 +1,377 @@
+*{
+    border: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 7.5vh;
+    width: 100%;
+    background-color: #501fcc; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    
+}
+
+#logo{
+    display: inline;
+    font-size: 1.3rem;
+    color: white;
+    margin: 0.7rem;
+    margin-left: 2%;
+    width: 6%;
+}
+
+#navcontent{
+    font-weight: bold;
+    width: 94%;
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.navcontentright{
+    width: auto;
+    height: 100%;
+}
+
+.navcontentright li{
+    display: inline-block;
+}
+
+.navcontentright li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;  
+}
+
+.navcontentright li a:hover{
+    transform: translateY(-0.15rem);
+}
+
+.navcontentleft{
+    height: auto;
+    width: auto;
+    justify-content: right;
+}
+
+#logout{
+    display: inline-block;
+    color: white;
+    margin-right:2rem;
+}
+
+#logout:hover{
+    cursor: pointer;
+    color: red;
+    transform: translateY(-0.15rem);
+}
+
+
+/* ----------------------------------------------------main container-------------------------------------- */
+
+.maincontainer{
+    display: flex;
+    height: 86vh;
+    width: 100%;
+}
+
+/* ------------------------------------------------------left div---------------------------------------------- */
+
+.leftdiv{
+    width: 22vw;
+    height: 100%;
+    background-color: rgb(246, 246, 246 , 0.7);
+}
+
+.heading{
+    display: flex;
+    height: 9vh;
+    width: 100%;
+    background-color: rgb(218, 218, 218 , 0.4);
+    justify-content: center;
+    align-items: center;
+    
+}
+.heading h3{
+    display: inline-block;
+    /* color: white; */
+}
+
+.quizlist{
+    list-style-type: none;
+    padding: 0rem;
+}
+
+.createdquiz{
+    display: flex;
+    border-bottom: 2px solid rgb(218, 218, 218 , 0.4);
+    padding: 1.2rem 0.6rem 1.2rem 0.6rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quizname{
+    display: inline-block;
+    padding-left: 0.6rem;
+}
+
+.quizname:hover{
+    /* color: #501fcc; */
+    font-weight: 600;
+    cursor: pointer;
+    transform: translateY(-0.2rem);
+}
+
+.buttondiv{
+    padding-right: 0.3rem;
+}
+
+.editquizbtn{
+    outline: none;
+    background-color: #501fcc;
+    color: white;
+    border-radius: 10px;
+    padding: 0.1rem 0.8rem 0.1rem 0.8rem;
+}
+
+.editquizbtn:hover{
+    background-color: rgb(0, 255, 0);
+    color: black;
+    transform: translateY(-0.2rem);
+    cursor: pointer;
+}
+
+.deletequizbtn{
+    outline: none;
+    background-color: #501fcc;
+    color: white;
+    border-radius: 10px;
+    padding: 0.1rem 0.8rem 0.1rem 0.8rem;
+}
+
+.deletequizbtn:hover{
+    background-color: rgb(255, 0, 0);
+    color:white;
+    transform: translateY(-0.2rem);
+    cursor: pointer;
+}
+
+.activeli{
+    background-color: rgba(143, 142, 142, 0.485);
+}
+
+
+
+
+
+/* ----------------------------------------------rightdiv---------------------------------------------- */
+
+.rightdiv{
+    display: flex;
+    width: 78vw;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.createnewquizdiv, .tutorialdiv{
+    height: 60vh;
+    width: 24vw;
+    background-color: #501fcc;
+    border-radius: 40px;
+}
+
+.newquizimgdiv{
+    background-color: white;
+    height: 45%;
+    width: 100%;
+}
+
+.newquizimgdiv img{
+    height: 100%;
+    width: 100%;
+    border-top: thin solid rgb(179, 177, 177);
+    border-left: thin solid rgb(179, 177, 177);
+    border-right: thin solid rgb(179, 177, 177);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.tutorialimgdiv{
+    background-color:white;
+    height: 45%;
+    width: 100%;
+}
+
+.tutorialimgdiv img{
+    height: 100%;
+    width: 100%;
+    border-top: thin solid rgb(179, 177, 177);
+    border-left: thin solid rgb(179, 177, 177);
+    border-right: thin solid rgb(179, 177, 177);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.newquizformdiv{
+    display: flex;
+    width: 100%;
+    height: 55%;
+    align-items: center;
+    justify-content: center;
+}
+
+.newquizform{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.newquizname{
+    display: block;
+    padding: 0.4rem;
+    height: 2.3rem;
+    width: 70%;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    margin-top: 3.5rem;
+    outline: none;
+    color: white;
+    font-size: 110%;
+    text-align: center;
+}
+
+.newquizname::placeholder{
+    opacity: 0.4;
+    color: white;
+    text-align: center;
+}
+
+.newquizname:hover{
+    transform: translateY(-0.3rem);
+}
+
+.createnewquizbtn{
+    background-color: white;
+    display: block;
+    padding: 0.4rem;
+    height: 2.3rem;
+    width: 50%;
+    border-radius: 20px;
+    margin-top: 2rem;
+    font-weight: bold;
+    outline: none;
+    
+}
+
+.createnewquizbtn:hover{
+    transform: translateY(-0.3rem);
+    background-color: rgb(9, 255, 0);
+    cursor: pointer;
+}
+
+.tutorialcontent{
+    display: flex;
+    padding: 0px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tutorialcontent h3,button{
+    display: inline-block;
+}
+
+.tutorialcontent h3{
+    padding: 0.4rem;
+    height: 2.3rem;
+    width: 70%;
+    margin-top: 3.5rem;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.gototutorialbtn{
+    background-color: white;
+    display: block;
+    padding: 0.4rem;
+    height: 2.3rem;
+    width: 50%;
+    border-radius: 20px;
+    margin-top: 2rem;
+    font-weight: bold;
+    outline: none;
+}
+
+.gototutorialbtn:hover{
+    transform: translateY(-0.3rem);
+    background-color:rgb(9, 255, 0);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------footer----------------------------------------------------*/
+
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 6.5vh;
+    background-color: #501fcc;
+    position: fixed;
+    bottom: 0px;
+}
+
+footer div{
+    text-align: center;
+    color: white;
+    margin: 0.8rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

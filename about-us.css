@@ -1,0 +1,52 @@
+.logo{
+    font-family: 'Pacifico', cursive;
+    font-size: larger;
+    color: white;
+    margin-right: 30px;
+
+}
+.navbar{
+    background-color: #501fcc !important;
+    box-shadow: 0px 0px 42px gray;
+    margin-bottom: 10px;
+
+}
+
+.navbar li a{
+    color: white !important;
+    font-weight: bold;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin-right: 30px;
+}
+
+/* Main content css */
+.container{
+    margin-top: 4rem;
+}
+
+/* Footer CSS */
+#footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    background-color: #501fcc;
+    color: white;
+    font-weight: bold;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    box-shadow: 0px 0px 42px gray;
+}
+
+#footer a{
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+}
+
+#footer a:hover{
+    color: white;
+}
+

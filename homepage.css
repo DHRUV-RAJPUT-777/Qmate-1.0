@@ -1,0 +1,83 @@
+.logo{
+    font-family: 'Pacifico', cursive;
+    font-size: larger;
+    color: white;
+    margin-right: 30px;
+
+}
+.navbar{
+    background-color: #501fcc !important;
+    box-shadow: 10px 0px 10px #D7EAEC;
+    margin-bottom: 10px;
+}
+
+.navbar li a{
+    color: white !important;
+    font-weight: bold;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin-right: 30px;
+}
+
+/* Css for Cards */
+.container{
+    margin-top: 20px;
+}
+.card{
+    border-radius: 2.25rem !important;
+    margin-bottom: 10px !important;
+    width: 18rem !important;
+    box-shadow: 10px 20px 15px #888888;
+    text-align: center;
+}
+.btn{
+    margin-top: 2rem !important;
+    border-radius: 21px !important;
+    width: 10rem;
+    height: 2.5rem;
+    background-color: #501fcc;
+    border-color: #501fcc;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+            0 10px 10px rgba(0,0,0,0.22);
+    margin-bottom: 10px;
+}
+
+.btn:hover{
+    background-color: #8c1aff !important;
+    border-color: #8c1aff !important;
+}
+/* CSS FOR FOOTER */
+
+.footer .card{
+    width: 100vw !important;
+
+}
+
+.card-header{
+    text-align: center;
+    background-color: #501fcc !important;
+    border-top-left-radius: 25px !important;
+    border-top-right-radius: 25px !important;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+
+}
+.footer .card-body{
+    text-align: center;
+    align-items: center;
+}
+#footer-btn{
+    margin-left: 0px !important;
+}
+
+#gmail-logo{
+    height: 45px;
+    width: 45px;
+}
+
+#gmail-logo:hover{
+    height: 50px;
+    width: 50px;
+}

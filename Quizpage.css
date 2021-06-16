@@ -1,0 +1,273 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    background-color: #501fcc;
+    width: 100%;
+    height: 8vh;
+}
+        
+#logo{
+    width: 11%;
+    height: 8vh;
+    font-size: 130%;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo h3{
+    display: inline-block;
+    margin: auto;
+}
+
+#logo h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.welcometextdiv{
+    width: 70%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#welcometext{
+    color: white;
+    margin-left: 40%;
+}
+
+.timecontainer{
+    height: 8vh;
+    width: 19%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#timeleft{
+    color: white;
+}
+
+
+
+
+
+.maincontainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 82.5vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.leftcontainer{
+    width: 72vw;
+    padding: 1rem 2rem 1rem 2rem;
+    height: 82.5vh;
+    background-color: rgb(246, 246, 246 , 0.7);
+    position: fixed;
+    top: 8vh;
+    
+}
+
+.questiondiv{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 14%;
+    /* background-color: white; */
+}
+
+.questiondiv h3{
+    font-size: 130%;
+    margin-left: 1rem;
+}
+
+.optionlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 72%;
+    list-style: none;
+    border: none;
+}
+
+.options{
+    display: inline-block;
+    background-color: white;
+    height: 2.7rem;
+    max-width: 80%;
+    width: 40%;
+    margin-left: 2rem;
+    padding: 0.7rem 0.9rem 0 0.9rem;
+    border-radius:20px ;
+    border: thin solid black;
+    outline: none;
+    font-weight: 570;
+}
+
+.activeoption{
+    background-color:  #501fcc;
+    color: white;
+}
+
+
+.btndiv{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    /* background-color: white; */
+    width: 100%;
+    height: 14%;
+}
+
+.btndivbtn{
+    display: inline-block;
+    height: 50%;
+    width: 13%;
+    border: thin solid black;
+    border-radius: 15px;
+    background-color:#501fcc;
+    color: blanchedalmond;
+    margin-right: 1.7rem;
+    padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+    font-weight: bold;
+    outline: none;
+}
+
+.btndivbtn:hover{
+    transform: translateY(-0.3rem);
+    height: 53%;
+    width: 15%;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 105%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.rightcontainer{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    width: 28vw;
+    height: 82.5vh;
+    border-left: thin solid rgb(218, 218, 218 , 0.5);
+}
+
+.lowercontainer{
+    display: flex;
+    flex-direction: column;
+    width: 27.9vw;
+    height: 82.5vh;
+    padding: 0px;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27.9vw;
+    height: 11%;
+    background-color: rgb(218, 218, 218 , 0.5);
+}
+
+.selectoptioncontainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 27.9vw;
+    height: auto;
+    padding: 1.5rem;
+}
+
+.selectoptions{
+    display: inline-block;
+    height: 7vh;
+    width: 7vh;
+    margin: 0.5rem 0.6rem 0.5rem 0.6rem;
+    border: thin solid rgb(218, 218, 218 , 0.5);
+    /* border-radius: 15px; */
+    outline: none;
+    background-color: rgb(218, 218, 218 , 0.5);
+}
+
+.selectoptions:hover{
+    cursor: pointer;
+}
+
+.activeselectedoption{
+    background-color:rgb(163, 163, 163 , 0.7); 
+    font-size: 105%;
+    font-weight: 650; 
+}
+
+.savedoptions{
+    background-color: rgb(0, 255, 0)!important;
+    font-size: 105%!important;
+    font-weight: 650!important; 
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: #501fcc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 7vh;
+    position: fixed;
+    bottom: 0px;
+}
+
+footer button{
+    outline: none;
+    padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+    background-color: white;
+    border-radius: 15px;
+    margin: 0.7rem 1rem 0.7rem 1rem;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    
+}
+
+footer button:hover{
+    transform: translateY(-0.2rem);
+    cursor: pointer; 
+    background-color: rgb(0, 255, 0);
+    border: 1px solid black;
+    color: black;
+    padding: 0.4rem 1.8rem 0.4rem 1.8rem;
+}
